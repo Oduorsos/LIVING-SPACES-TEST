@@ -61,10 +61,9 @@ html, body {
   .menu-toggle {
     display: flex;
   }
-}
-
-header.shrink .menu-toggle span {
+  header.shrink .menu-toggle span {
   background: #111;
+  }
 }
 
 /* LINKS */
@@ -314,7 +313,7 @@ header.shrink .menu-toggle span {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 0 24px;
+    padding: 0 18px;
     height: auto;
     min-height: 100vh;
   }
@@ -322,7 +321,7 @@ header.shrink .menu-toggle span {
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 50px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
 
   .hero-left,
@@ -663,7 +662,7 @@ section {
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .projects {
-    padding: 120px 40px;
+    padding: 80px 40px;
   }
 
   .projects-grid {
@@ -772,7 +771,7 @@ section {
 /* RESPONSIVE */
 @media (max-width: 1000px) {
   .services {
-    padding: 120px 40px;
+    padding: 80px 40px;
   }
 
   .services-grid {
@@ -865,7 +864,7 @@ section {
 @media (max-width: 768px) {
 
   .our-process {
-    padding: 80px 24px;
+    padding: 60px 24px;
   }
 
   .process-row {
@@ -1102,7 +1101,7 @@ section {
 @media (max-width: 768px) {
 
   .cta-section {
-    padding: 100px 24px;
+    padding: 80px 24px;
   }
 
   .cta-actions {
@@ -1248,5 +1247,6 @@ section {
     width: 100%;
   }
 }
+
 
 

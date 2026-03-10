@@ -29,16 +29,15 @@
       <a href="#">Home</a>
 
       <div class="nav-item">
-        <a href="#">Who we are</a>
+        <a href="../About/about.html">Who we are</a>
         <div class="dropdown">
           <a href="#">Our Story</a>
-          <a href="#">Team</a>
-          <a href="#">Philosophy</a>
+          <a href="#">About Us</a>
         </div>
       </div>
 
       <div class="nav-item">
-        <a href="#">Our Services</a>
+        <a href="../Services page/services.html">Our Services</a>
         <div class="dropdown">
           <a href="#">Interior Design</a>
           <a href="#">Space Planning</a>
@@ -47,14 +46,13 @@
       </div>
 
       <div class="nav-item">
-        <a href="#">Our Projects</a>
+        <a href="../Projects/Projects.html">Our Projects</a>
         <div class="dropdown">
           <a href="#">Residential</a>
           <a href="#">Workplaces</a>
-          <a href="#">Hospitality</a>
         </div>
       </div>
-      <a href="#">Contact</a>
+      <a href="../Contact/contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -76,9 +74,6 @@
         material, and light come together to shape meaningful human experiences.
       </p>
 
-      <div class="hero-actions">
-        <button class="btn"> Start your Trasformation</button>
-      </div>
     </div>
 
     <!-- RIGHT CONTENT -->
@@ -158,10 +153,10 @@
 </section>
 
 <!-- selected projects-->
-  <section class="projects" id="projects">
+  <section class="homeprojects" id="homeprojects">
 
   <!-- section header -->
-  <div class="projects-header">
+  <div class="homeprojects-header">
     <span class="section-eyebrow">Our Work</span>
     <h2>Selected Projects</h2>
     <p class="section-intro">
@@ -171,64 +166,65 @@
   </div>
 
   <!-- projects -->
-  <div class="projects-grid">
+  <div class="homeprojects-grid">
 
-    <article class="project-card">
-      <img src="Assets/project7.jpg" alt="Westlands Residence">
+    <article class="homeproject-card">
+      <img src="../Assets/project7.jpg" alt="Westlands Residence">
 
-      <div class="project-overlay">
-        <span class="project-index">01</span>
+      <div class="homeproject-overlay">
+        <span class="homeproject-index">01</span>
 
-        <div class="project-info">
+        <div class="homeproject-info">
           <h3>Westlands Residence</h3>
-          <p class="project-meta">Residential · Nairobi</p>
-          <p class="project-desc">
+          <p class="homeproject-meta">Residential · Nairobi</p>
+          <p class="homeproject-desc">
             A warm, minimal family home focused on daylight,
             natural textures, and spatial calm.
           </p>
         </div>
 
-        <button class="project-btn">View Project</button>
       </div>
     </article>
 
-    <article class="project-card">
-      <img src="Assets/project4.jpg" alt="Studio Office">
+    <article class="homeproject-card">
+      <img src="../Assets/project4.jpg" alt="Studio Office">
 
-      <div class="project-overlay">
-        <span class="project-index">02</span>
+      <div class="homeproject-overlay">
+        <span class="homeproject-index">02</span>
 
-        <div class="project-info">
+        <div class="homeproject-info">
           <h3>Studio N Office</h3>
-          <p class="project-meta">Commercial · Kilimani</p>
-          <p class="project-desc">
+          <p class="homeproject-meta">Commercial · Kilimani</p>
+          <p class="homeproject-desc">
             An adaptive workspace balancing collaboration,
             privacy, and architectural restraint.
           </p>
         </div>
 
-        <button class="project-btn">View Project</button>
       </div>
     </article>
 
-    <article class="project-card">
-      <img src="Assets/project3.jpg" alt="Hotel Lobby">
+    <article class="homeproject-card">
+      <img src="../Assets/project3.jpg" alt="Hotel Lobby">
 
-      <div class="project-overlay">
-        <span class="project-index">03</span>
+      <div class="homeproject-overlay">
+        <span class="homeproject-index">03</span>
 
-        <div class="project-info">
+        <div class="homeproject-info">
           <h3>Azure Boutique Hotel</h3>
-          <p class="project-meta">Hospitality · Coast</p>
-          <p class="project-desc">
+          <p class="homeproject-meta">Hospitality · Coast</p>
+          <p class="homeproject-desc">
             A sensory arrival space shaped by rhythm,
             shadow, and coastal influence.
           </p>
         </div>
 
-        <button class="project-btn">View Project</button>
       </div>
     </article>
+
+     <a href="../Projects/Projects.html" class="more-projects">
+         View More Projects
+      </a>
 
   </div>
 
@@ -329,10 +325,10 @@
     </div>
 
     <div class="process-media">
-      <img src="Assets/project7.jpg" class="main-img" alt="">
+      <img src="../Assets/project7.jpg" class="main-img" alt="">
       <div class="side-images">
-        <img src="Assets/project4.jpg" alt="">
-        <img src="Assets/project6.png" alt="">
+        <img src="../Assets/project4.jpg" alt="">
+        <img src="../Assets/project6.png" alt="">
       </div>
     </div>
   </div>
@@ -351,7 +347,7 @@
     </div>
 
     <div class="process-media">
-      <img src="Assets/project5.jpeg" class="single-img" alt="">
+      <img src="../Assets/project5.jpeg" class="single-img" alt="">
     </div>
   </div>
 
@@ -369,7 +365,7 @@
     </div>
 
     <div class="process-media">
-      <img src="Assets/project3.jpg" class="single-img" alt="">
+      <img src="../Assets/project3.jpg" class="single-img" alt="">
     </div>
   </div>
 
@@ -396,18 +392,10 @@
       <button class="cta-btn primary" id="openModal">
         Start Your Project
       </button>
-      <a href="#projects" class="cta-btn outline">
+      <a href="#homeprojects" class="cta-btn outline">
         View Selected Work
       </a>
     </div>
-  </div>
-
-  <!-- FLOATING CARD -->
-  <div class="cta-card fade-in">
-    <h4>Studio Contact</h4>
-    <p>Nairobi, Kenya</p>
-    <p>C&CLivingspaces.co.ke</p>
-    <span>Mon–Fri · 9am–6pm</span>
   </div>
 
 </section>
@@ -453,10 +441,10 @@
     <!-- LINKS -->
     <div class="footer-links">
       <h4>Explore</h4>
-      <a href="#">What we do</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="../About/about.html">About Us</a>
+      <a href="../Services page/services.html">Our Services</a>
+          <a href="../Projects/Projects.html">What we do</a>
+      <a href="../Contact/contact.html">Contact Us</a>
     </div>
 
     <!-- CONTACT -->
@@ -467,7 +455,7 @@
         Nairobi, Kenya
       </p></br>
       <p>
-        <a href="c&clivingspaces.co.ke">
+        <a href="mailto:studio@forma.co.ke">
           c&clivingspaces.co.ke
         </a>
       </p>
@@ -492,6 +480,7 @@
   <div class="footer-bottom">
     <span>© 2026 C&C Living spaces</span>
     <span>All rights reserved</span>
+    <span>Developed by ochiengsospeter064@gmail.com</span>
   </div>
 
 </footer>
@@ -499,4 +488,3 @@
 <script src="Home.js"></script>
 </body>
 </html>
-

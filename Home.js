@@ -61,15 +61,15 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
 /* selected Projects */
-const projectCards = document.querySelectorAll(".project-card");
+const homeprojectCards = document.querySelectorAll(".homeproject-card");
 
-const projectObserver = new IntersectionObserver(
+const homeprojectObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         entry.target.style.transitionDelay = `${index * 0.15}s`;
         entry.target.classList.add("reveal");
-        projectObserver.unobserve(entry.target);
+        homeprojectObserver.unobserve(entry.target);
       }
     });
   },
@@ -78,12 +78,12 @@ const projectObserver = new IntersectionObserver(
   }
 );
 
-projectCards.forEach(card => {
+homeprojectCards.forEach(card => {
   card.classList.add("hidden");
-  projectObserver.observe(card);
+  homeprojectObserver.observe(card);
 });
 
-projectCards.forEach(card => {
+homeprojectCards.forEach(card => {
   const img = card.querySelector("img");
 
   card.addEventListener("mousemove", (e) => {
@@ -102,7 +102,7 @@ projectCards.forEach(card => {
   });
 });
 
-projectCards.forEach(card => {
+homeprojectCards.forEach(card => {
   card.addEventListener("click", () => {
     const title = card.querySelector("h3")?.innerText || "Project";
 
@@ -110,7 +110,7 @@ projectCards.forEach(card => {
     console.log(`Opening project: ${title}`);
 
     // Example future use:
-    // openProjectModal(card.dataset.projectId);
+    //openProjectModal(card.dataset.projectId);
   });
 });
 
